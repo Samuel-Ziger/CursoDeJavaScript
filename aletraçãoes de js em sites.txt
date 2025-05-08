@@ -1,0 +1,8 @@
+document.querySelector('oq vc quer alterar').ineerText = 'oq sera no lugar do alerado'
+--------------------------------------------------------------------------------------
+document.body.style.background = 'cor que vc quer aletrar'
+--------------------------------------------------------------------------------------
+document.querySelector('a imagem q vc vai mudar').style.filter = 'o filtro ( eu estou usando o grayscale(100%)'
+-----------------------------------------------------------------------------------------------------------------
+document.querySelector('a imagem q vc quer fazer sumir').style.visibility = 'hidden'
+------------------------------------------------------------------------------------
