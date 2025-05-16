@@ -31,7 +31,28 @@
    var n2 = Number.parseFloat(window.prompt("Digite outro número:"));
    var s = n1 + n2;
    window.alert ("A soma dos valores é " + s)
-    // A melhor forma e usar  e  o Number(n) mas ele não des
+    // A melhor forma e usar  e  o Number(n) mas ele não descarta as outras mas porque ela e a mahlhor ? porque nela eu deixo o proprio javascrpit descida o que usar
+    //ficaria dessa forma se fosse em number:
+    //var n1 = Number(window.prompt("Digite um número:")); 
+    // mas agora pra fazer a mudança de number para string pode ser usado as eguintes formas:
+    //String(n) ou  ou valor que eu quiser converter no lugar do "n" mas tambem pode ser usado a seguinte forma: n.toString()
+    // uma forma de ser usado e da seguinte forma: 
+    // window.alert (' as soma dos valores e ' + String(s)); nesse caso não e necessario fazer a conversão mas ja e um modelo
+
+
+
+    /*Mas agora pra poder fazer frases usando variáveis tem as seguintes formas:
+    a declaração do variável primeiro:
+    var s = 'JavaScript'
+    Apos isso temos 3 fromas as duas primeiras seria:
+    'Eu estou aprendando s' mas dessa forma ele vai aparecer o S em vez de javascrpit 
+    temos a opção:
+    'Eu estou aprendendo' + s --> sendo no caso a concatenação que ficaria asssim:
+    exemplo de concatenação:
+    var nome = 'joaninho'
+    var idade = 12
+    var + nota 5.5
+    'O aluno' + nome + 'com' + idade + anos tirou a nota = nota
 </script>
 
 </body>
