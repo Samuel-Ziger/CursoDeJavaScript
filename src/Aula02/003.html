@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 06</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+
+        var nome = window.prompt("Qual e o seu nome ?")
+        document.write(` Olá ${nome},Seu nome tem ${nome.length} letras! </br>`); 
+        // Aqui a difereça ja sendo que na qual o document ele vai aparecer dentero do body e o .length serve pra contar a quantidade de letras.
+        // Tem como deixar as letras maiores usando as tags de do html dessa forma:
+        //document.write(`<h2>Seu nome tem ${nome.length} letras.</h2>`); A TAG "<h2>" no HTML sendo usada pra títulos tambem pode ser usadar aqui.
+        //Mas esxiste uam forma melhor e mais ídeal de ser feita que a  seguinte: feita em um CSS que  o que está no começo da do código.
+        //Agora vamos usar outras Strings 
+        document.write(`Seu nome em Maiusuclo <strong>${nome}</strong>, vai ficar desse jeito: ${nome.toLocaleUpperCase()}`); 
+        //Dessa forma são formatadas todas as letras pra Maisuculo.
+        document.write(`E dessa forma seu nome em minusculo fica assim: ${nome.toLocaleLowerCase()}`);
+        //Agora vamos pra formatação em números.
+        var n1 =1545.5
+        //Pra fazer em mudanças de casas decimais e simples basta fazer assim : n1.toFixed(Numero de casa de sua preferncia) epode ser adcionado no final o : .replace(".",",") que vai trocar o "." por ","
+        // Fazer isso no terminal node
+        // Agora um comando que pode ser usado caso o valor do número seja um sálario por exemplo:
+        //observação: e um código já mais avançado.
+        n1.toLocaleString('pt-BR', {style: "currency",  currency: "BRL"});// basta depois mudar o BRL pra USD puo EUR pra dolár e euro
+        
+    </script>
+</body>
+</html>
